@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.guojing.my_minresume.MainActivity"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    // personal infor section
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_medium"
+        tools:context="com.example.guojing.my_minresume.MainActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/user_picture"
+                android:layout_width="@dimen/image_view_size"
+                android:layout_height="@dimen/image_view_size"
+                android:src="@drawable/user_ghost"
+                android:layout_alignParentRight="true"/>
+            <LinearLayout
+                android:id="@+id/user_name_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/buttom_margin_size"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/user_picture"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="your name"
+                    android:textSize="@dimen/text_size_large"/>
+                <ImageButton
+                    android:id="@+id/basic_info_edit_button"
+                    android:layout_width="@dimen/image_button_size"
+                    android:layout_height="@dimen/image_button_size"
+                    android:src="@drawable/ic_mode_edit_black_24px"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="your_name@google.com"
+                android:textSize="@dimen/text_size_min"
+                android:layout_toLeftOf="@+id/user_picture"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/user_name_edit"/>
+        </RelativeLayout>
+
+        // education section
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:paddingBottom="@dimen/spacing_medium">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/education_section"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_large"/>
+
+            <ImageButton
+                android:id="@+id/education_add_button"
+                android:layout_width="@dimen/image_button_size"
+                android:layout_height="@dimen/image_button_size"
+                android:src="@drawable/ic_add_black_24px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/education_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/buttom_margin_size"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        // experience section
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:paddingBottom="@dimen/spacing_medium">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/experience_section"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_large"/>
+
+            <ImageButton
+                android:id="@+id/experience_add_button"
+                android:layout_width="@dimen/image_button_size"
+                android:layout_height="@dimen/image_button_size"
+                android:src="@drawable/ic_add_black_24px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/experience_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/buttom_margin_size"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        // project section
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:paddingBottom="@dimen/spacing_medium">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/project_section"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_large"/>
+
+            <ImageButton
+                android:id="@+id/project_add_button"
+                android:layout_width="@dimen/image_button_size"
+                android:layout_height="@dimen/image_button_size"
+                android:src="@drawable/ic_add_black_24px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/project_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+

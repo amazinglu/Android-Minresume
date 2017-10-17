@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_medium">
+
+    <EditText
+        android:id="@+id/education_edit_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/education_school_hint"/>
+
+    <EditText
+        android:id="@+id/education_edit_amjor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/education_major_hint"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/education_edit_startDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/education_start_date_hint"/>
+
+        <EditText
+            android:id="@+id/education_edit_endDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/education_end_date_hint"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/education_edit_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/education_courses_hint"/>
+
+    <Button
+        android:id="@+id/education_edit_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/delete_button"/>
+</LinearLayout>

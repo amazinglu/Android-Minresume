@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My_MinResume</string>
+    <string name="education_section">education</string>
+    <string name="experience_section">experience</string>
+    <string name="project_section">project</string>
+
+    <string name="education_school_hint">school</string>
+    <string name="education_major_hint">major</string>
+    <string name="education_start_date_hint">start date mm/yyyy</string>
+    <string name="education_end_date_hint">end date mm/yyyy</string>
+    <string name="education_courses_hint">courses</string>
+
+    <string name="experience_company_hint">company</string>
+    <string name="experience_startDate_hint">start date mm/yyyy</string>
+    <string name="experience_endDate_hint">end date mm/yyyy</string>
+    <string name="experience_details">details</string>
+
+    <string name="project_projectName_hint">project name</string>
+    <string name="project_startDate_hint">start date mm/yyyy</string>
+    <string name="project_endDate_hint">end date mm/yyyy</string>
+    <string name="project_details_hint">details</string>
+
+    <string name="basic_info_name_hint">your name</string>
+    <string name="basic_info_email_hint">your email</string>
+
+    <string name="action_save">save</string>
+
+    <string name="choose_user_picture">Choose user picture</string>
+
+    <string name="delete_button">delete</string>
+</resources>
